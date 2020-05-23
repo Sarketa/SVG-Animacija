@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+#ptocak,
+#ztocak {
+  animation: tocak 9s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#covk {
+  animation: bicikl 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+#sesir {
+  animation: kapa 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes tocak {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(3600deg);
+  }
+}
+@keyframes bicikl {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(18deg);
+  }
+}
+@keyframes kapa {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(32%);
+  }
+}
